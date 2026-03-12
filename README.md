@@ -1,4 +1,4 @@
-# 📝 Gen0lab - BPE Tokenizer From Scratch
+# Gen0lab - BPE Tokenizer From Scratch
 
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -18,7 +18,7 @@ L'objectif ici était de reconstruire l'algorithme de tokenisation utilisé par 
 
 Ce travail est une implémentation personnelle fortement inspirée par le cours "Let's build the GPT Tokenizer" d'**Andrej Karpathy** et son dépôt [minbpe](https://github.com/karpathy/minbpe). Ce repo documente mon propre cheminement technique et les ajustements logiques nécessaires pour aboutir à un système fonctionnel.
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
 ### Step 1 : BasicTokenizer (Terminé)
 * **Entraînement** : Identification des paires d'octets les plus fréquentes et création de règles de fusion.
