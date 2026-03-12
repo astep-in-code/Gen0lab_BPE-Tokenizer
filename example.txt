@@ -1,0 +1,31 @@
+In computer science, a lookup table (LUT) is an array that replaces runtime computation of a mathematical function with a simpler array indexing operation, in a process termed as direct addressing. The savings in processing time can be significant, because retrieving a value from memory is often faster than carrying out an "expensive" computation or input/output operation.[1] The tables may be precalculated and stored in static program storage, calculated (or "pre-fetched") as part of a program's initialization phase (memoization), or even stored in hardware in application-specific platforms. Lookup tables are also used extensively to validate input values by matching against a list of valid (or invalid) items in an array and, in some programming languages, may include pointer functions (or offsets to labels) to process the matching input. FPGAs also make extensive use of reconfigurable, hardware-implemented, lookup tables to provide programmable hardware functionality. LUTs differ from hash tables in that, to retrieve a value 
+v
+{\displaystyle v} with key 
+k
+{\displaystyle k}, a hash table would store the value 
+v
+{\displaystyle v} in the slot 
+h
+(
+k
+)
+{\displaystyle h(k)} where 
+h
+{\displaystyle h} is a hash function i.e. 
+k
+{\displaystyle k} is used to compute the slot, while in the case of LUT, the value 
+v
+{\displaystyle v} is stored in slot 
+k
+{\displaystyle k}, thus directly addressable.[2]: 466 
+
+History
+
+Part of a 20th-century table of common logarithms in the reference book Abramowitz and Stegun.
+Before the advent of computers, lookup tables of values were used to speed up hand calculations of complex functions, such as in trigonometry, logarithms, and statistical density functions.[3]
+
+In ancient (499 AD) India, Aryabhata created one of the first sine tables, which he encoded in a Sanskrit-letter-based number system. In 493 AD, Victorius of Aquitaine wrote a 98-column multiplication table which gave (in Roman numerals) the product of every number from 2 to 50 times and the rows were "a list of numbers starting with one thousand, descending by hundreds to one hundred, then descending by tens to ten, then by ones to one, and then the fractions down to 1/144"[4] Modern school children are often taught to memorize "times tables" to avoid calculations of the most commonly used numbers (up to 9 × 9 or 12 × 12).
+
+Early in the history of computers, input/output operations were particularly slow – even in comparison to processor speeds of the time. It made sense to reduce expensive read operations by a form of manual caching by creating either static lookup tables (embedded in the program) or dynamic prefetched arrays to contain only the most commonly occurring data items. Despite the introduction of systemwide caching that now automates this process, application level lookup tables can still improve performance for data items that rarely, if ever, change.
+
+Lookup tables were one of the earliest functionalities implemented in computer spreadsheets, with the initial version of VisiCalc (1979) including a LOOKUP function among its original 20 functions.[5] Microsoft Excel includes multiple specialized lookup functions, with VLOOKUP for vertical lookup (as in a traditional lookup book), HLOOKUP for horizontal lookup, and (since 2019) XLOOKUP for outputting multiple output columns at once.[6]
