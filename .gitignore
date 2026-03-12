@@ -1,0 +1,15 @@
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Fichiers spécifiques à exclure
+tokenization.ipynb
+tokenization.py
+
+# Python (fichiers compilés)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels (si tu en utilises)
+venv/
+.env
