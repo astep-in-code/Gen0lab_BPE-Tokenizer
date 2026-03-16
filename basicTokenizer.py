@@ -76,18 +76,19 @@ class BasicTokenizer:
     def load(self):
         with open('example.txt', 'r', encoding='utf-8') as f:
             rawText = f.read()
-        return rawText
+        return __str__.rawText
 
-tokenizer = BasicTokenizer()
-tokenizer.load()
-tokenizer.train(rawText, 276)
-
-#encode & decode
-tokens = tokenizer.encode(rawText)
-print("Tokens compressés :", tokens[:10])
-
-texte_reconstruit = tokenizer.decode(tokens)
-print("Succès ?", rawText == texte_reconstruit)
+if __name__ == "__main__":
+    tokenizer = BasicTokenizer()
+    rawText = tokenizer.load()
+    tokenizer.train(rawText, 276)
+    
+    #encode & decode
+    tokens = tokenizer.encode(rawText)
+    print("Tokens compressés :", tokens[:10])
+    
+    texte_reconstruit = tokenizer.decode(tokens)
+    print("Succès ?", rawText == texte_reconstruit)
 
 
 # In[ ]:
